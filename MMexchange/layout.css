@@ -1,0 +1,18 @@
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-5-1 {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/*index.html - how does it work*/
+.howContainer {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .faq-container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.faq-question');
+
+            questions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const answer = this.nextElementSibling;
+
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+    <title>FAQ Page</title>
+</head>
+
+<body>
+
+    <div class="faq-container">
+        <div class="faq-question">Q: What is the FAQ page for?</div>
+        <div class="faq-answer">A: The FAQ page is designed to provide answers to commonly asked questions.</div>
+
+        <div class="faq-question">Q: How do I use the FAQ page?</div>
+        <div class="faq-answer">A: Simply click on a question to reveal the answer.</div>
+
+        <div class="faq-question">Q: Can I add more questions to this FAQ?</div>
+        <div class="faq-answer">A: Yes, you can easily add more questions and answers by following the existing format
+            in the HTML.</div>
+    </div>
+
+</body>
+
+</html>
